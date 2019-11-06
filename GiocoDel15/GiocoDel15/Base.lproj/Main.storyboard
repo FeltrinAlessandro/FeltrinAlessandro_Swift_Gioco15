@@ -99,11 +99,49 @@
                                 <rect key="frame" x="192" y="170" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="mischiaMatrice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YaD-dh-EnK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="btn_1" destination="vTU-6x-Lzl" id="gXB-U0-6r2"/>
+                        <outlet property="btn_10" destination="FTV-6g-yeQ" id="Uib-Ry-a0Z"/>
+                        <outlet property="btn_11" destination="gfS-Eo-2Kf" id="3aL-tb-Coz"/>
+                        <outlet property="btn_12" destination="TMy-U3-JWz" id="Kk9-v0-Kza"/>
+                        <outlet property="btn_13" destination="BCE-Q9-hXM" id="ghH-cJ-Oce"/>
+                        <outlet property="btn_14" destination="Yhj-hv-z7b" id="d6e-k1-ilW"/>
+                        <outlet property="btn_15" destination="lCU-f8-veh" id="nOd-pL-gfK"/>
+                        <outlet property="btn_16" destination="iyv-wW-tgs" id="624-mb-c9r"/>
+                        <outlet property="btn_2" destination="Pph-XF-oEb" id="62f-hL-BP0"/>
+                        <outlet property="btn_3" destination="GKS-ht-bL2" id="Nb5-Qk-6LL"/>
+                        <outlet property="btn_4" destination="qMZ-CX-EsO" id="7Dx-R5-pQ6"/>
+                        <outlet property="btn_5" destination="5EO-Ae-mJu" id="aQm-e6-L2Y"/>
+                        <outlet property="btn_6" destination="IcR-hE-pTO" id="k32-3G-e5U"/>
+                        <outlet property="btn_7" destination="MuT-zS-3cG" id="ii7-FR-nqz"/>
+                        <outlet property="btn_8" destination="Jjy-So-nmf" id="DXh-JH-Aad"/>
+                        <outlet property="btn_9" destination="kEd-HY-vzN" id="ojr-9M-9Hk"/>
+                        <outlet property="btn_Mescola" destination="kVJ-AA-AeO" id="Ve5-GZ-2FV"/>
+                        <outletCollection property="gruppoBtn_All" destination="vTU-6x-Lzl" collectionClass="NSMutableArray" id="691-bV-tdS"/>
+                        <outletCollection property="gruppoBtn_All" destination="Pph-XF-oEb" collectionClass="NSMutableArray" id="mxa-wx-y24"/>
+                        <outletCollection property="gruppoBtn_All" destination="GKS-ht-bL2" collectionClass="NSMutableArray" id="vPA-bV-k5E"/>
+                        <outletCollection property="gruppoBtn_All" destination="qMZ-CX-EsO" collectionClass="NSMutableArray" id="RQt-Zp-dGD"/>
+                        <outletCollection property="gruppoBtn_All" destination="5EO-Ae-mJu" collectionClass="NSMutableArray" id="vUP-lc-2pD"/>
+                        <outletCollection property="gruppoBtn_All" destination="IcR-hE-pTO" collectionClass="NSMutableArray" id="8bJ-Di-UrC"/>
+                        <outletCollection property="gruppoBtn_All" destination="MuT-zS-3cG" collectionClass="NSMutableArray" id="xlM-Ee-gAv"/>
+                        <outletCollection property="gruppoBtn_All" destination="Jjy-So-nmf" collectionClass="NSMutableArray" id="QXS-UD-pVD"/>
+                        <outletCollection property="gruppoBtn_All" destination="kEd-HY-vzN" collectionClass="NSMutableArray" id="qLN-dY-uVt"/>
+                        <outletCollection property="gruppoBtn_All" destination="FTV-6g-yeQ" collectionClass="NSMutableArray" id="97q-zY-RVQ"/>
+                        <outletCollection property="gruppoBtn_All" destination="gfS-Eo-2Kf" collectionClass="NSMutableArray" id="XrP-7I-wiO"/>
+                        <outletCollection property="gruppoBtn_All" destination="TMy-U3-JWz" collectionClass="NSMutableArray" id="QwM-1n-J55"/>
+                        <outletCollection property="gruppoBtn_All" destination="BCE-Q9-hXM" collectionClass="NSMutableArray" id="f5X-Ru-K2a"/>
+                        <outletCollection property="gruppoBtn_All" destination="Yhj-hv-z7b" collectionClass="NSMutableArray" id="dFN-yS-gen"/>
+                        <outletCollection property="gruppoBtn_All" destination="lCU-f8-veh" collectionClass="NSMutableArray" id="AfF-eA-wtF"/>
+                        <outletCollection property="gruppoBtn_All" destination="iyv-wW-tgs" collectionClass="NSMutableArray" id="W8E-p1-Wqd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
