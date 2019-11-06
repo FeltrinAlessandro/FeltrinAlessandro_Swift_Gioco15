@@ -17,11 +17,27 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        ordinaMatrice()
+        ordinaMatriceAndBtn()
     }
     
     @IBAction func mischiaMatrice(_ sender: Any) {
-    
+    var x = 3
+    var y = 3
+    var a = 0
+        for i in 0...10{
+            a = Int.random(in:0...1)
+            if(a==1){
+                if(y>0)
+                {
+                    matrice[x][y] = matrice[x][y+1]
+                    y += 1
+                    matrice[x][y] = 0
+                }
+            }
+            else{
+                
+            }
+        }
     }
     
     func applicaMatriceMischiata() {
@@ -29,14 +45,14 @@ class ViewController: UIViewController {
     }
     
     
-    func ordinaMatrice()  {
+    func ordinaMatriceAndBtn()  {
         var x = 0
         var y = 0
          gruppoBtn_All[15].setTitle(" ", for:.normal)
+        
         for i in 0...14{
         gruppoBtn_All[i].setTitle(String(i+1), for:.normal)
         }
-
         
         for i in 0...15{
             if(x==3 && y==3)
