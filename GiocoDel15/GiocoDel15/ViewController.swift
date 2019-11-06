@@ -10,14 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var matrice: [[int]] = []
+    var matrice :[[Int]] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-    func ordinaMatrice() {
+    func ordinaMatrice()  {
         
     }
 
