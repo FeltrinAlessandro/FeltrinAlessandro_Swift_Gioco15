@@ -30,7 +30,7 @@ class ViewController: UIViewController {
                 if(y>0)
                 {
                     matrice[x][y] = matrice[x][y+1]
-                    y += 1
+                    y -= 1
                     matrice[x][y] = 0
                 }
             }
