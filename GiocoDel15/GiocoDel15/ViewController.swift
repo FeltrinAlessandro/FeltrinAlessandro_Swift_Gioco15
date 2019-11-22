@@ -84,7 +84,11 @@ class ViewController: UIViewController {
         
     }
     
-    func trovaPosizioneVuota() -> (Int, Int){
+    
+    @IBAction func spostaValore(_ sender: UIButton) {
+        let posArray = gruppoBtn_All.firstIndex(of: sender)
+    
+        func trovaPosizioneVuota() -> (Int, Int){
         for i in 0 ... 3{
             for j in 0 ... 3{
                 if matrice[i][j] == 0{
@@ -99,7 +103,7 @@ class ViewController: UIViewController {
     func ordinaMatriceAndBtn()  {
         //var x = 0
         //var y = 0
-         gruppoBtn_All[15].setTitle(" ", for:.normal)
+         gruppoBtn_All[15].setTitle("0", for:.normal)
         
         matrice = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,0]]
         
