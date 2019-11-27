@@ -100,18 +100,6 @@ class ViewController: UIViewController {
         let posArray = gruppoBtn_All.firstIndex(of: sender)
     }
     
-        func trovaPosizioneVuota() -> (Int, Int){
-        for i in 0 ... 3{
-            for j in 0 ... 3{
-                if matrice[i][j] == 0{
-                    return (i, j)
-                }
-            }
-        }
-        return(-1,-1)
-    }
-    
-    
     func ordinaMatriceAndBtn()  {
 
          gruppoBtn_All[15].setTitle("0", for:.normal)
