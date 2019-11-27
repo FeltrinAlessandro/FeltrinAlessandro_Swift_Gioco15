@@ -20,8 +20,8 @@ class ViewController: UIViewController {
     
     @IBAction func mischiaMatrice(_ sender: Any) {
     var posZero = trovaPosizioneVuota()
-    var x = posZero.0
-    var y = posZero.1
+    var y = posZero.0
+    var x = posZero.1
     var a = 0
         for _ in 0...50{
             a = Int.random(in:0...1)
@@ -113,7 +113,7 @@ class ViewController: UIViewController {
          for i in 0 ... 3{
              for j in 0 ... 3{
                  if matrice[i][j] == 0{
-                     return (i, i)
+                     return (i, j)
                  }
              }
          }
