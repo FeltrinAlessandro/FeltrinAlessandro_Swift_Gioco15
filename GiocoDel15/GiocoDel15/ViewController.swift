@@ -69,7 +69,7 @@ class ViewController: UIViewController {
     {
         for y in 0...3{
             for x in 0...3{
-                    gruppoBtn_All[y*4+x].setTitle(String(matrice[x][y]), for: .normal)
+                    gruppoBtn_All[y*4+x].setTitle(String(matrice[y][x]), for: .normal)
             }
         }
     }
@@ -96,7 +96,7 @@ class ViewController: UIViewController {
         var a = 0
         for y in 0...3{
             for x in 0...3{
-                if (matrice[x][y] != x+y*4+1)
+                if (matrice[y][x] != x+y*4+1)
                 {
                     a = 1
                 }
@@ -129,34 +129,34 @@ class ViewController: UIViewController {
         var y = posArray/4
         if(x<3)
         {
-            if(matrice[x+1][y]==0)
+            if(matrice[y][x+1]==0)
             {
-                matrice[x+1][y]=matrice[x][y]
-                matrice[x][y] = 0
+                matrice[y][x+1]=matrice[y][x]
+                matrice[y][x] = 0
             }
         }
         if(y<3)
         {
-            if(matrice[x][y+1]==0)
+            if(matrice[y+1][x]==0)
             {
-                matrice[x][y+1]=matrice[x][y]
-                matrice[x][y] = 0
+                matrice[y+1][x]=matrice[y][x]
+                matrice[y][x] = 0
             }
         }
         if(x>0)
         {
-            if(matrice[x-1][y]==0)
+            if(matrice[y][x-1]==0)
             {
-                matrice[x-1][y]=matrice[x][y]
-                matrice[x][y] = 0
+                matrice[y][x-1]=matrice[y][x]
+                matrice[y][x] = 0
             }
         }
         if(y>0)
         {
-            if(matrice[x][y-1]==0)
+            if(matrice[y-1][x]==0)
             {
-                matrice[x][y-1]=matrice[x][y]
-                matrice[x][y] = 0
+                matrice[y-1][x]=matrice[y-1][x]
+                matrice[y][x] = 0
             }
         }
         applicaMatricemischiata()
