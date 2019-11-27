@@ -28,9 +28,9 @@ class ViewController: UIViewController {
             if(a==1){
                 if(y>0)
                 {
-                    matrice[x][y] = matrice[x][y-1]
+                    matrice[y][x] = matrice[y-1][x]
                     y -= 1
-                    matrice[x][y] = 0
+                    matrice[y][x] = 0
                 }
                 else if(x<3){
                         matrice[x][y] = matrice[x+1][y]
