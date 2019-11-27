@@ -96,7 +96,7 @@ class ViewController: UIViewController {
         var a = 0
         for y in 0...3{
             for x in 0...3{
-                if (matrice[y][x] != x+y*4+1)
+                if (matrice[y][x] != x+y*4+1 && (x != 3 || y != 3))
                 {
                     a = 1
                 }
