@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var lbl_GiocoCompletato: UILabel!
     @IBOutlet weak var btn_Mescola: UIButton!
     @IBOutlet var gruppoBtn_All: [UIButton]!
     var matrice : [[Int]] = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,0]]
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
     var y = posZero.0
     var x = posZero.1
     var a = 0
-        for _ in 0...50{
+        for _ in 0...100{
             a = Int.random(in:0...1)
             if(a==1){
                 if(y>0)
@@ -69,7 +70,7 @@ class ViewController: UIViewController {
     {
         for y in 0...3{
             for x in 0...3{
-                    gruppoBtn_All[y*4+x].setTitle(String(matrice[y][x]), for: .normal)
+                    gruppoBtn_All[y*4+x].setImage(UIImage(named:String(matrice[y][x])), for: .normal)
             }
         }
     }
@@ -155,7 +156,7 @@ class ViewController: UIViewController {
         {
             if(matrice[y-1][x]==0)
             {
-                matrice[y-1][x]=matrice[y-1][x]
+                matrice[y-1][x]=matrice[y][x]
                 matrice[y][x] = 0
             }
         }
@@ -164,12 +165,12 @@ class ViewController: UIViewController {
     
     func ordinaMatriceAndBtn()  {
 
-         gruppoBtn_All[15].setTitle("0", for:.normal)
+        gruppoBtn_All[15].setImage(UIImage(named:"0"), for: .normal)
         
         matrice = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,0]]
         
         for i in 0...14{
-        gruppoBtn_All[i].setTitle(String(i+1), for:.normal)
+        gruppoBtn_All[i].setImage(UIImage(named:String(i+1)), for: .normal)
         }
     }
 }
