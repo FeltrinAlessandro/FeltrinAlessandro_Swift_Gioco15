@@ -63,6 +63,10 @@ class ViewController: UIViewController {
                 
             }
         }
+        for i in 0...15{
+            gruppoBtn_All[i].isEnabled = true
+        }
+        lbl_GiocoCompletato.text = ""
         applicaMatricemischiata()
     }
     
@@ -74,24 +78,6 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-    /*func applicaMatriceMischiata() {
-        var x = 0
-        var y = 0
-        for _ in 0...15{
-            if(x==3){
-                gruppoBtn_All[y*4+x].setTitle(String(matrice[x][y]), for: .normal)
-                x = 0
-                y+=1
-            }
-            else
-            {
-                gruppoBtn_All[y*4+x].setTitle(String(matrice[x][y]), for: .normal)
-                x+=1
-            }
-        }
-        
-    }*/
     
     func controllaMatrice(){
         var a = 0
@@ -106,6 +92,10 @@ class ViewController: UIViewController {
         if(a==0)
         {
             //label hai vinto
+            lbl_GiocoCompletato.text = "Hai Vinto!!!"
+            for i in 0...15{
+                gruppoBtn_All[i].isEnabled = false
+            }
         }
     }
     
@@ -161,6 +151,7 @@ class ViewController: UIViewController {
             }
         }
         applicaMatricemischiata()
+        controllaMatrice()
     }
     
     func ordinaMatriceAndBtn()  {
