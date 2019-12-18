@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         ordinaMatriceAndBtn()
     }
-    
+    //metodo che mischia la matrice spostando il punto zero
     @IBAction func mischiaMatrice(_ sender: Any) {
     var posZero = trovaPosizioneVuota()
     var y = posZero.0
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         lbl_GiocoCompletato.text = ""
         applicaMatricemischiata()
     }
-    
+    //metodo che applica la matrice all'array di bottoni
     func applicaMatricemischiata()
     {
         for y in 0...3{
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+    //metodo che controlla se la matrice è in ordine
     func controllaMatrice(){
         var a = 0
         for y in 0...3{
@@ -99,7 +99,7 @@ class ViewController: UIViewController {
         }
     }
     
-    
+    //metodo che restituisce le coordinate dello zero
     func trovaPosizioneVuota() -> (Int, Int){
          for i in 0 ... 3{
              for j in 0 ... 3{
@@ -111,7 +111,7 @@ class ViewController: UIViewController {
          return(-1,-1)
      }
     
-    
+    //metodo per spostare i valori della matrice
     @IBAction func spostaValore(_ sender: UIButton)
     {
         var posArray : Int!
@@ -153,7 +153,7 @@ class ViewController: UIViewController {
         applicaMatricemischiata()
         controllaMatrice()
     }
-    
+    //metodo che mette in ordine la matrice e l'array di bottoni
     func ordinaMatriceAndBtn()  {
 
         gruppoBtn_All[15].setImage(UIImage(named:"0"), for: .normal)
